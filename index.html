@@ -1,0 +1,85 @@
+<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario Web</title>
+        <link rel="stylesheet" href="./style.css">
+      </head>
+      <body>
+        <div class="container">
+          <div class="form-card">
+            <div class="logo-placeholder">
+              <img src="Logo.png" alt="Logo" style="max-width: 150px; height: auto;">
+            </div>
+
+            <form id="webForm">
+              <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+              </div>
+
+              <div class="form-section">
+                <h3>Trámites y Servicios</h3>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="beneficios" name="tramites" value="Beneficios tributarios UPME">
+                  <label for="beneficios">Beneficios tributarios UPME</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="legalizacion" name="tramites" value="Legalización OR">
+                  <label for="legalizacion">Legalización OR</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="operacion" name="tramites" value="Operación B2B">
+                  <label for="operacion">Operación B2B</label>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h3>Sistema Solares Fotovoltaicos</h3>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="onGrid" name="fotovoltaicos" value="Sistemas ON GRID">
+                  <label for="onGrid">Sistemas ON GRID</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="offGrid" name="fotovoltaicos" value="Sistemas OFF GRID">
+                  <label for="offGrid">Sistemas OFF GRID</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="onOffGrid" name="fotovoltaicos" value="Sistemas ON-OFF GRID">
+                  <label for="onOffGrid">Sistemas ON-OFF GRID</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="aires" name="fotovoltaicos" value="Aires acondicionados">
+                  <label for="aires">Aires acondicionados</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="bombeo" name="fotovoltaicos" value="Bombeo solar">
+                  <label for="bombeo">Bombeo solar</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="sistemas100" name="fotovoltaicos" value="Sistemas > 100 kWp">
+                  <label for="sistemas100">Sistemas > 100 kWp</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="sistemas1" name="fotovoltaicos" value="Sistemas > 1 MWp">
+                  <label for="sistemas1">Sistemas > 1 MWp</label>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h3>Sistema Solares Térmicos</h3>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="calentamiento" name="termicos" value="Calentamiento de agua">
+                  <label for="calentamiento">Calentamiento de agua</label>
+                </div>
+              </div>
+
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <script src="main.js"></script>
+      </body>
+    </html>
